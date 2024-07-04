@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+#box{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(65, 109, 61);
+    justify-content: center;
+    align-items:center ;
+    /*transition-property: background-color;
+    transition-duration:1s;
+    transition-timing-function: ease-in;
+    transition-delay: 3s;*/
+
+    /*Transition short-hand property*/
+    /* transition: background-color 1s ease-in 2s; */
+
+    transition: all 1s ease-in;
+}
+/*transition mein humne bg-color dala srf usi per hoga effect,ab niche heigt ar width be hai jisper apply krna hai isliye hum all likhdenge upar ko*/
+#box:hover{
+    background-color: rgb(253, 253, 253);
+    height: 400px;
+    width: 400px;
+    border-radius: 100px;
+    
+}   
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>This is CSS Transition</h2>
+        <div id="box">
+            This is my Box
+        </div>
+    </div>
+</body>
+</html>

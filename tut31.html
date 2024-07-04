@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selector</title>
+    <style>
+        /*Single target aise krte hai*/
+        /* h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        } */
+
+
+        /*div ander jitne bhi p tag honge sb target honge*/
+        /* div p{
+            color: yellow;
+            background-color: green;
+        } */
+
+
+        /*Div ka direct child jo jo hai wo wo hoga affect*/
+        /* div > p{
+            color: yellow;
+            background-color: green;
+        } */
+
+
+        /*div k just previous sibling*/
+        div + p{
+            color: yellow;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>this is paragraph</p>
+            <ul>
+                <li>this is line </li>
+                <p>hello para</p>
+
+            </ul>
+        </div>
+        <p>This is another paragraph</p>
+        <p>This DEMO paragraph</p>
+    </div>
+    <p>This is Another more</p>
+</body>
+</html>

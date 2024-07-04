@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity & Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+
+        }
+        #box1{background-color: rgb(128, 198, 128);
+        position: relative;
+        top: 44px;
+        z-index: 2;
+    }
+        #box2{background-color: rgb(61, 185, 207);
+            position: relative;
+            top: 25px;
+            z-index: 1;
+        /*jagah rahega per element gyab rhega*/
+        /* visibility: hidden; */  
+        /*Pura body gayab hojayga usko jagah koi aur lelega*/
+        /* display: none; */
+
+        }
+/*Z-index agar apko use krna hai to apko pahle us element display relative banana hoga*/
+
+        #box3{background-color: rgb(75, 69, 150);
+            position: relative; 
+            z-index: 2;}
+        #box4{background-color: rgb(170, 86, 91);}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+
+
+</body>
+</html>

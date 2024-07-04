@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 266px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /*Depend on the type we can target in this way*/
+        input[type="text"] {
+            border: 2px solid red;
+        }
+
+        /*with the help of any specific attribute we can target elemnt*/
+        /* a[target]{
+            font-size: 50px;
+            color: palevioletred;
+            text-decoration: none;
+        } */
+
+        /*with the help of any specific attribute we can target elemnt*/
+        div a[target='_self'] {
+            font-size: 50px;
+            color: rgb(20, 31, 155);
+            text-decoration: none;
+        }
+
+        /*Depend on the type we can target in this way*/
+        input[type="password"] {
+            border: 2px solid rgb(47, 161, 118);
+        }
+
+        /*Depend on the type we can target in this way*/
+        input[type="submit"] {
+            border: 2px solid rgb(163, 208, 28);
+            border-radius: 10px;
+        }
+
+        /*Kisi bhi tag jisme element jo jyda hao seq mein usme apply hoga*/
+        /* li:nth-child(){
+            color: white;
+            background-color: black;
+        } */
+
+        /*Kisi bhi tag jisme element jo jyda hao seq mein usme apply hoga with the help of formula where n ki value start hoti hai 0 se*/
+        /* li:nth-child(2n+1){
+            color: white;
+            background-color: black;
+        } */
+
+        /*Odd Child --EVEN / ODD-- */
+        li:nth-child(even) {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://google.com" target="_blank">Go to google</a>
+        <a href="https://google.com" target="_self">Go to google</a>
+        <form action="gggg" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-5">item-6</li>
+            <li class="item" id="item-5">item-7</li>
+            <li class="item" id="item-5">item-8</li>
+        </ul>
+    </div>
+</body>
+
+</html>

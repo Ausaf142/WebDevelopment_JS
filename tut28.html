@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+
+<style>
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /*Initialising the box as flex box*/
+    display: flex;
+
+    /* Flex properties for container  */
+    
+    /*it will affect bcz by default its flex-box item arrange in row wise*/
+    flex-direction: row;  
+    /*flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /*jo bad me likhoge wo apply ho jata hai*/
+
+
+    /*chhota brda krne pe display size jise hum responsive kahte hai usk liye wrapping rna hoga*/
+     flex-wrap: wrap;
+   /* flex-wrap: wrap-reverse; */
+
+
+    /*flex short hand for flex-direction and flex-wrap called flex-flow*/
+    /* flex-flow: row-reverse wrap; */
+
+
+
+    /* justify-content: center; */
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(209, 124, 40);
+    border: 2px solid rgb(2, 224, 128);
+    margin: 10px;
+    padding: 3px;
+}
+</style>
+
+</head>
+<body>
+    <h1>This is flex box Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>

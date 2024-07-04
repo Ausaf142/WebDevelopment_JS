@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            font-size: 32px;
+            background-color: red;
+            color: rgba(251, 251, 250, 0.855);
+            text-align: center;
+            display: none;
+        }
+        @media(max-width:300px){
+            #box-1{
+                display: block;
+            }
+        }
+        @media(max-width:500px)and (min-width:301px)
+        {
+            #box-2{
+                display: block;
+            }
+        }
+        @media(max-width:900px)and (min-width:500px)
+        {
+            #box-3{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">How may i help you</div> 
+    <div class="box" id="box-2">I am Ausaf Khan</div>
+    <div class="box" id="box-3">Hello! User</div>
+    <div class="box" id="box-4">I am a Thor</div>
+</body>
+</html>

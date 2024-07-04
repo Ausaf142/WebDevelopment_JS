@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid tutorials</title>
+    <style>
+        .grid-container{
+            display:grid;
+            grid-template-columns: auto auto auto auto auto;
+            /* row-gap: 50px; */
+            width: 1000px;
+            background-color:yellowgreen;
+        }
+        .grid{
+            /* margin: 2px; */
+            border: 2px solid black;
+            background-color: red;
+            /* height: 250px;
+            width: 250px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #grid-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid" id="grid-1">GRID78</div>
+        <div class="grid" id="grid-2">GRID1</div>
+        <div class="grid" id="grid-3">GRID</div>
+        <div class="grid" id="grid-4">GRID</div>
+        <div class="grid" id="grid-5">GRID</div>
+        <div class="grid" id="grid-6">GRID</div>
+        <div class="grid" id="grid-7">GRID</div>
+        <div class="grid" id="grid-8">GRID</div>
+        <div class="grid" id="grid-9">GRID</div>
+    </div>
+</body>
+</html>

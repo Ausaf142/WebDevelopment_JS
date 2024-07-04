@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: salmon;
+        }
+        body{
+            font-family: "Ubuntu", sans-serif;
+
+        }
+
+        .items {
+            border: 2px solid black;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: antiquewhite;
+        }
+
+        h3 {
+            margin: 2px 0px;
+        }
+
+        .para {
+            padding: 4px;
+
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /*float element dusre pe overlap krta hai qk wo float usko rokne k liye clear use krte hai left,right ya both option hai*/
+            clear: both;
+            width: auto;
+        }
+        p{
+            /* jo last me likhoge wahi hoga affective */
+            /*justify lines ko fill krdeta hai brabar */
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+        }
+        h2{
+            margin: 11px 254px;
+    width: 43%;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to my page! Ausaf khan</h2>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque aut
+                ducimus commodi suscipit doloremque beatae repudiandae. Labore, doloribus? Fuga, consectetur placeat
+                beatae architecto et voluptatem est pariatur! Quibusdam, fugiat.</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>computer</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque
+                aut ducimus commodi suscipit doloremque beatae repudiandae. Labore, doloribus? Fuga, consectetur
+                placeat beatae architecto et voluptatem est pariatur! Quibusdam, fugiat.</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque esse corrupti debitis ipsa nemo provident cum, unde, ducimus distinctio accusamus ex? Quam error recusandae beatae voluptate odio facilis nulla numquam quos quae placeat qui dicta molestiae aliquid non voluptas quas, aperiam deleniti quaerat ducimus! Dolores cumque sed aperiam unde, quae perspiciatis sapiente id laborum! Eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                itaque aut ducimus commodi suscipit doloremque beatae repudiandae. Labore, doloribus? Fuga,
+                consectetur placeat beatae architecto et voluptatem est pariatur! Quibusdam, fugiat.</p>
+        </div>
+    </div>
+   
+</body>
+
+</html>

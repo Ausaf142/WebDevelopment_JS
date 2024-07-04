@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array OR objects</title>
+</head>
+<body>
+    <div class="container">HTML</div>
+    <script>
+      
+//HERE WE ARE CREATING IN THE FORM OF OBJECT :BUT ACTUALLY IT IS A TYPE OF ARRAY NOT ARRAY.WE USE KEY PAIR
+        let employee={
+            name:"Ausaf",
+            salary : 1000000,
+            channel:"MTV",
+            "channel 2":"ETV",   
+            //channel space 2 likhoge to qoute me likhoge and browser mein print k liye sq.braces use krna padega.
+        }
+        console.log(employee);
+        /*Browsr k console mein print kr skte hai like as employee.name OR employee['name'] dono same hai*/
+
+//HERE ANOTHER WAY OF CREATING ARRAY :
+        let employe =[1,5,6,"ausaf",undefined];
+        console.log(employe);
+        console.log(employe[3]);
+
+//HERE ANOTHER ONE WAY OF CREATING ARRAY BY GIVING ARRAY SIZE
+        let name = new Array(10);
+        name[0]=55;
+        name.push("adee")
+        console.log(name);
+        
+// EXAMPLES  
+        let examples = new Array(97,5,2,"harry");
+        console.log(examples);
+        examples.push(`this is pushed`);
+        console.log(examples);
+        console.log(examples.length);
+    </script>
+</body>
+</html>

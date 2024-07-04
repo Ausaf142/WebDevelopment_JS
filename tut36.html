@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            /* height: 1000px; */
+        }
+        .box{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: ausaf;
+            animation-duration: 10s;
+            animation-iteration-count: 5;
+            animation-fill-mode: forwards;
+            /* animation-timing-function: ease-out; */
+            /* animation-direction: alternate; */
+            
+            animation-name: ausaf1;
+
+
+        }
+        @keyframes ausaf1{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: greenyellow;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+                background-color: rgb(90, 97, 193);
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+                background-color: rgb(200, 99, 195);
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+                background-color: rgb(103, 209, 142);
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+
+        @keyframes ausaf {
+            from{
+                width: 250px;
+
+            }
+            to{
+                width: 500px;
+            }
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+</html>

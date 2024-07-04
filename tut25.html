@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        /* position:static(default),absolute,relative,fixed,sticky */
+        .container {
+            background-color: yellowgreen;
+            border: 2px solid black;
+            height: 3500px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+
+        }
+  
+
+        #box3 {
+            /* if relative then element will shift regarding its old position  */
+            /* position: relative;
+            top: 34px;
+            left: 34px; */
+
+
+            /* if Absolute then element will shift regarding the parent body  */
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /* if position is fixed it will shift regarding the window */
+            /* position: fixed;
+            right: 10px; */
+
+            /*if position is sticky then element shift from its old position and does make it space of its old place */
+
+            position: sticky;
+            top: 3px;
+        }
+
+        body {
+            /* height: 600px; */
+        }
+    </style>
+</head>
+
+<body>
+  
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">chat with us</div>
+            <div class="box" id="box4">4</div>
+        </div>
+    
+
+</body>
+
+</html>

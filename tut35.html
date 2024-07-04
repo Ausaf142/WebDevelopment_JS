@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Custom Variables Properties</title>
+    <style>
+        :root{
+            /* yaha per ek variable bana lo jo ab global variable jaisa behave krega, pure body me use krskte hai*/
+            --box-color:rgb(227, 231, 144);
+            --maxw:333px;
+
+
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(133, 133, 224);
+            border: 2px solid rgb(8, 8, 8);
+            margin: 2px 9px;
+            max-width: var(--maxw);
+            overflow: hidden;
+            padding: 2%;
+
+            /* yaha per ek variable bana lo upar ar fir usko niche usi bllock tk use kr skte hai--local variable type hai*/
+            box-shadow: inset 8px 8px var(--box-color);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--box-color);
+            height: 500px;
+            
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus eos facilis corrupti adipisci error eum reprehenderit voluptas fugit tempore distinctio. Tempora maiores nisi dignissimos nemo inventore minus quas voluptates excepturi? Repellendus, amet suscipit quae ducimus, modi dignissimos eveniet assumenda nulla excepturi, corrupti quo et cupiditate deserunt quas accusantium aut doloremque natus? Laudantium odit quibusdam maiores explicabo? Modi iusto labore omnis iure debitis voluptatibus tenetur, architecto molestias error fugit? Eum qui quod voluptates reiciendis eligendi ea similique obcaecati iusto. Delectus nisi cupiditate enim adipisci iure, numquam voluptatibus id dignissimos beatae quam repellat facilis inventore laudantium. Optio id placeat nesciunt minima! Quas!</div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+    
+</body>
+</html>

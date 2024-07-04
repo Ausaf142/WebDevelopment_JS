@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow or text shadow</title>
+    <style>
+        .container {
+            display: flex;
+       
+        }
+
+        .item {
+            border: 2px solid tomato;
+            border-radius: 5px;
+            padding: 5px 7px;
+            margin: 5px 9px;
+            background-color: aquamarine;
+           
+
+            /*box shadow by default baher k traf lagta hai, X-axis and Y-axis way mein*/
+            box-shadow: 5px 5px 5px 5px red;
+
+            /*abhi agr aap chahte hai yhi chij bix k ander ho to*/
+            box-shadow: inset 5px 5px 5px 5px red;
+            /* x-axis >> y-axis >> blur-length >> spread length*/
+
+            /*Multiple shadow ek hi element per aise krte hai comma k madad se*/
+            box-shadow: inset 5px 5px 5px 5px red, -10px 0px 5px 5px purple;
+        }
+
+        .item h3 {
+            text-shadow: 2px 2px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1 item">
+            <H3>This is C++ caorse</H3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum nemo, ut nisi autem deserunt iste.
+                Recusandae excepturi veritatis eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                dignissimos natus quasi dolor ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum nemo, ut nisi autem deserunt iste.
+                Recusandae excepturi veritatis eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                dignissimos natus quasi dolor ab?
+                Repudiandae?</p>
+        </div>
+        <div class="item-2 item">
+            <H3>Card</H3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos natus quasi dolor ab?
+                Repudiandae?</p>
+        </div>
+        <div class="item-3 item">
+            <H3>Card</H3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dignissimos natus quasi dolor ab?
+                Repudiandae?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(160, 230, 230);
+            border-radius: 26px;
+           
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 16px 20px;
+        }
+        .navbar li a {
+         padding: 3px 3px;
+         text-decoration: none;
+         color: black;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         
+        }
+        .head{
+            float: right;
+            margin: 15px 15px;
+            
+        }
+       
+        .search{
+            float: left;
+        }
+        .btn{
+            float: right;
+        }
+        #searchbar{
+            border-radius: 17px;
+        }
+        #searchbar:hover{
+            background-color: aqua;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        button{
+            border-radius: 15px;
+        }
+   
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+               <div class="head">
+                <div class="search">
+                    <input type="text" name="Search" id="searchbar" placeholder="search here">
+                </div>
+                <div class="btn">
+                   <button>Submit</button>
+                </div>
+               </div>
+            </ul>
+
+        </nav>
+    </header>
+
+</body>
+</html>

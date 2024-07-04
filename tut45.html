@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query with Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-areas: 'navbar navbar navbar' 'section aside aside';  */
+            
+        }
+
+        .bdr {
+            border: 2px solid white;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        @media only screen and (min-width:300px) and (max-width:800px) {
+            body {
+                background-color: red;
+            }
+            .container {
+               grid-template-areas: 'navbar' 'section' 'aside';
+            }
+
+        }
+
+        @media only screen and (min-width:800px) and (max-width:1200px) {
+            body {
+                background-color: rgb(23, 87, 40);
+            }
+            .container {
+               grid-template-areas: 'navbar navbar navbar''section aside aside';
+            }
+        }
+
+        @media only screen and (min-width:1200px) and (max-width:1840px) {
+            body {
+                background-color: rgb(71, 58, 147);
+            }
+
+            .container {
+                
+                grid-template-areas: 'navbar section aside';
+            }
+        }
+
+      
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More About us</h1>
+        </aside>
+        <footer class="bdr">
+            <h1>Contact-91987654311</h1>
+        </footer>
+    </div>
+</body>
+
+</html>

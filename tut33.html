@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            
+            
+           
+        }
+        
+        header::before {
+            margin: 0;
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            content: "";
+            background: url('https://plus.unsplash.com/premium_photo-1680607980708-d2532db7a529?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover
+            ;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        .navigation {
+         
+            font-size: 20px;
+            display: flex;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            height: 255px;
+            margin: 3px 15px;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::before{
+            content: "This is content"
+        } */
+        h1 {
+            font-size: 4rem;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1>Welcome to my coding World</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facere fugiat vitae nihil deleniti minus
+                quas
+                consequuntur voluptas laboriosam non natus ea Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Id, dolor..</p>
+        </section>
+            <hr>
+    </header>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi corporis voluptatibus autem ex numquam. Asperiores minus voluptatibus minima, tempore quos reiciendis incidunt? Atque, dicta! Incidunt cumque tempore recusandae nulla modi, fugit sit, quos dolores quia aliquid perferendis totam animi cum voluptatum optio quibusdam debitis exercitationem. Voluptate quam provident nihil facilis minus tempora praesentium, ex omnis ducimus quaerat commodi distinctio deleniti quibusdam consectetur eveniet impedit alias ullam. Odit placeat necessitatibus libero iste doloribus debitis voluptas, quisquam numquam esse harum dolore nam, optio tempore qui fuga soluta reiciendis repudiandae doloremque sunt animi. Quaerat consequuntur autem repudiandae nobis! Ipsam, minima reprehenderit odit quod aliquam neque illo voluptate, delectus veritatis voluptatem molestias quo vitae quidem qui facilis officia voluptatibus molestiae quasi ab magni? Ipsam odio ratione id placeat laboriosam accusantium voluptatem est error consectetur? Saepe in unde dolorem tempore cumque, beatae maxime ullam vitae? Atque, at accusamus! Magni quisquam voluptas debitis libero corrupti iusto porro molestiae aliquam ratione expedita doloremque veniam aliquid rerum deserunt, nobis eveniet sed consequuntur maxime! Aliquid quibusdam, totam dolor tenetur reprehenderit ex sequi illum, nemo alias reiciendis tempora accusamus nulla dolorem perspiciatis a non perferendis atque, unde rerum ea ratione autem repellat ducimus. Totam laboriosam exercitationem porro aspernatur dolor! Itaque repellendus, odit ad, inventore excepturi aspernatur beatae deleniti tempora quas quibusdam hic adipisci praesentium quis? Excepturi, beatae dolor qui blanditiis fuga eum facere illum dolorem, totam corrupti atque labore sint assumenda nemo enim voluptatem repellendus officiis tempore ex nisi nulla explicabo ut temporibus libero! Voluptatibus recusandae dicta libero incidunt vitae? Quia sed, nihil ea nam nostrum saepe atque facere consectetur ipsa ex! Sed cumque sit et doloribus, perferendis in exercitationem aspernatur saepe accusantium. Nobis nostrum expedita quae eos, minus ullam, commodi similique nam est atque provident, corporis fugiat quia et. Dicta fugit dolores modi, debitis cupiditate natus possimus nobis? Distinctio ab, pariatur vel suscipit in cupiditate excepturi ad ut iste a sapiente commodi similique. Sequi, temporibus ipsam? Dignissimos illum aspernatur aperiam sequi iusto distinctio hic, mollitia quas voluptas fugit quisquam molestiae repellendus quaerat ea quam dolores cupiditate. Quidem dolorum cupiditate quasi deserunt, facilis iure aut nostrum harum itaque id molestiae hic fuga, sapiente consequatur blanditiis quae suscipit quo reprehenderit perferendis atque saepe eum rerum officiis odit. Ipsam, maxime. Qui repudiandae autem ducimus natus. Recusandae consectetur quia maiores doloribus, veniam aut, sunt quos porro et esse nobis blanditiis suscipit ea ipsum dignissimos labore possimus eaque, similique in neque cumque velit accusantium modi! Nihil non iure tempore praesentium dolore laboriosam provident repudiandae iusto suscipit magni at cupiditate cumque officia deleniti nostrum repellendus, veritatis impedit porro nobis quod esse architecto aspernatur quisquam! Voluptatibus magni excepturi non! Repudiandae optio hic asperiores! Cumque debitis laborum velit adipisci ea quos cupiditate dolorem aperiam, aliquid dignissimos ullam, cum temporibus, sit quod architecto consequuntur numquam provident. Dignissimos accusamus neque illo repellendus est laborum ratione voluptatum sint, vel velit, fugit ut expedita voluptas. Impedit laborum corrupti culpa enim veniam asperiores, blanditiis animi modi vero aliquam molestias quas, delectus excepturi rerum adipisci, non dolore porro nam tenetur fugit necessitatibus quidem.</p>
+</body>
+
+</html>
