@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        padding:10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser event:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseUp
+    mousemove
+
+    Form:
+    Submit
+    Focus
+
+    DOM:
+    DOMContentLoaded
+
+    Transition/transformation:
+    Transitioned -->
+    <div class="container">
+        <h3>This is DOM</h3>
+        <p id="para" mou>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi, commodi laborum at perspiciatis quam? Ducimus debitis harum delectus consectetur quisquam voluptas facere fugit, perferendis in nam deserunt, maxime excepturi sunt hic, porro incidunt ut illo maiores nemo. Id quasi aut similique doloribus asperiores nihil commodi vel fugiat vitae excepturi, maiores suscipit dignissimos molestiae repellat labore totam esse non saepe nemo. Atque sit similique, veniam sed aut aliquid obcaecati, incidunt earum consequuntur porro velit deleniti magnam suscipit excepturi fuga quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum obcaecati officia quasi, incidunt voluptates necessitatibus numquam officiis repellat sit, ipsum quis alias nobis, vitae blanditiis eligendi tempore illo amet cumque.
+        </p>
+        <button id="btn" onclick="togglehide()">Show hide</button>
+    </div>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener('mouseover',function run(){
+            // alert("Mouse inside");
+            console.log("Mouse inside");
+        });
+        para.addEventListener('mouseout',function run(){
+                // alert("Mouse went outside");
+                console.log("Mouse went outside");
+        });
+        function togglehide(){
+            let btn=document.getElementById("btn");
+            let para = document.getElementById("para");
+            if(para.style.display !="none"){
+                para.style.display ="none";
+            }
+            else{
+                para.style.display ="block";
+            }
+        }
+        
+    </script>
+</body>
+</html>
