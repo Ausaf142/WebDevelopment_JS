@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumeJS settimout and ClearTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+        Time Is Now <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+        // setTimeout --Allows us to run the function once after the intervel of time
+        //  SetIntervel -->Allows us to run the function repeatedly after the intervel of time
+
+        function greet(name, ByeText) {
+            console.log("Hello !Good Mornig " + name + " " + ByeText)
+        }
+
+        //iss function mein ap multiple argument de skte hai use of comma like as OR aap function call ni kr skte sirf name de skte hai
+        // setTimeout(greet,5000, "adeeb" , "Take Care"); 
+
+
+        //setTimeOut ko cancel krne k liye clearTimeOut ftn use kr skte hai.
+        // Timeout=setTimeout(greet, 5000, "adeeb" , "Take Care"); 
+        // clearTimeout(Timeout);
+
+        // code=setInterval(greet, 1000, "Ausaf" , "GoodNight");
+        // clearInterval(code)
+
+        //ye run to hoga per function k variable ki jagah undefine ayega
+        // setTimeout(greet(),2000);
+
+        function displaytime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+        setTimeout(displaytime, 1000);
+
+
+    </script>
+</body>
+
+</html>
